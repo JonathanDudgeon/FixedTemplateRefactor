@@ -1,0 +1,37 @@
+﻿ <div class="wrapper">
+	<nav>
+		<ul id="top_nav">
+			<li><a href="Support.html">Support</a></li>
+			<li><a href="#">FAQs</a></li>
+			<li class="end"><a href="#">Sitemap</a></li>
+		</ul>
+	</nav>
+    <time/>
+</div>
+<div class="wrapper" role="navigation">
+	<h1><a href="index.html" id="logo">Pro Soft</a></h1>
+	<nav>
+		<ul id="menu">
+            <!--original page styling uses span, so using url action rather than actionlink -->
+            <li id="menu_active"><a href="@Url.Action("Index", "Home")"><span><span>Home</span></span></a></li>
+			<li><a href="@Url.Action("Index", "Home")"><span><span>Features</span></span></a></li>
+			<li class="nav3"><a href="@Url.Action("Index", "Home")"><span><span>Support</span></span></a></li>
+			<li class="nav4"><a href="@Url.Action("Index", "Home")"><span><span>Downloads</span></span></a></li>
+			<li class="nav5"><a href="@Url.Action("Index", "Home")"><span><span>Contacts</span></span></a></li>
+		</ul>
+	</nav>
+</div>
+<div class="wrapper">
+	<div class="text">
+		<span class="tittle">Example<span>Fixed Layout</span></span>
+		<p>Sed ut perspiciatis unde omnis natius<span>error volup accusantium doloremque</span><span>laudantium, totaeim aperiam, eaque</span><span>ipsaquae ab illo inventore.</span></p>
+		<a href="#" class="button1">More Info</a>
+	</div>
+	<div id="gallery">
+		<ul id="myRoundabout">
+			<li><img src= "@Url.Content("~/Content/images/cimage.png")" alt=""></li>
+            <li><img src= "@Url.Content("~/Content/images/img2.png")" alt=""></li>
+            <li><img src= "@Url.Content("~/Content/images/img1.png")" alt=""></li>
+		</ul>
+	</div>
+</div>

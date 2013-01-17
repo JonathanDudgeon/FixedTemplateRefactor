@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedTemplateRefactor", "fixedtemplaterefactor\FixedTemplateRefactor.csproj", "{E42D2F11-EE77-4E41-AD70-DBDB80DCC327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedTemplateRefactor.Tests", "fixedtemplaterefactor.Tests\FixedTemplateRefactor.Tests.csproj", "{D658DF83-233D-4327-BC98-3E7BBB490A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedTemplateRefactor.DomainX", "FixedTemplateRefactor.DomainX\FixedTemplateRefactor.DomainX.csproj", "{F35866F1-DCCD-4425-B1BD-2E29AFAD9B9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E42D2F11-EE77-4E41-AD70-DBDB80DCC327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42D2F11-EE77-4E41-AD70-DBDB80DCC327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42D2F11-EE77-4E41-AD70-DBDB80DCC327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42D2F11-EE77-4E41-AD70-DBDB80DCC327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D658DF83-233D-4327-BC98-3E7BBB490A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D658DF83-233D-4327-BC98-3E7BBB490A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D658DF83-233D-4327-BC98-3E7BBB490A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D658DF83-233D-4327-BC98-3E7BBB490A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F35866F1-DCCD-4425-B1BD-2E29AFAD9B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35866F1-DCCD-4425-B1BD-2E29AFAD9B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35866F1-DCCD-4425-B1BD-2E29AFAD9B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35866F1-DCCD-4425-B1BD-2E29AFAD9B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
