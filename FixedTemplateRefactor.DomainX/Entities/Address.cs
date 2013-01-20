@@ -4,15 +4,34 @@ namespace FixedTemplateRefactor.DomainX.Entities
 {
     public class Address
     {
-        private bool isvalid;
+        private bool isValid;
 
-        public  int AddressID { get; set; }
+        public int AddressID { get; set; }
+
+        public bool IsValid
+        {
+            get
+            {
+                return isValid; 
+            }
+            set
+            { 
+                isValid = value; 
+            }
+        }
+
+        // Foreign key
+        public int CustomerId { get; set; }
+         
+        public virtual Customer Customer { get; set; }
+
+        public Address()
+        {
+        }
 
         public Address(Boolean isAddressValid)
         {
-            isvalid = isAddressValid;
+            isValid = isAddressValid;
         }
-
-        public bool IsValid { get; set; }
     }
 }

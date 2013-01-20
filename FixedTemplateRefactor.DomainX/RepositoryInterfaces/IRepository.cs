@@ -10,6 +10,8 @@
 
         T GetById(int id);
 
+        void SaveChanges();
+
         System.Collections.Generic.IEnumerable<T> All();
     }
 }

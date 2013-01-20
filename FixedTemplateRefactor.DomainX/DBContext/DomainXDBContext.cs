@@ -19,15 +19,9 @@ namespace FixedTemplateRefactor.DomainX.DBContext
     {
         private IDbSet<Customer> customers;
 
-        public DomainXDBContext(string connectionString)
-            : base(connectionString)
-        {
-            this.customers = this.Customers;
-        }
-
         /// <summary>
         /// Returns a DbSet that allows CRUD 
-        /// operations to be performed for the given entity in the context. 
+        /// operations to be performed for the given Aggragate entity in the context. 
         /// </summary>
         public IDbSet<Customer> Customers
         {
@@ -44,6 +38,15 @@ namespace FixedTemplateRefactor.DomainX.DBContext
         public virtual IDbSet<T> DbSet<T>() where T : class
         {
             return this.Set<T>();
+        }
+    
+        // Composed types
+        public IDbSet<Address> Addresses { get; set; }
+
+        public DomainXDBContext(string connectionString)
+            : base(connectionString)
+        {
+            this.customers = this.Customers;
         }
 
         /// <summary>

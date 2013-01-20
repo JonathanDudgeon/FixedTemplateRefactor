@@ -182,7 +182,6 @@
     <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Documentation\High Level Design Document.doc" />
-    <Content Include="Documentation\HighLevelClassDiagram.vsd" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />

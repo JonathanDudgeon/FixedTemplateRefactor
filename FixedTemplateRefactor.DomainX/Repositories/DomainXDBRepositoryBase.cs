@@ -11,31 +11,31 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         private readonly IDbSet<T> dbset;
         private DomainXDBContext db;
 
-        public DomainXRepositoryBase(IDomainXDatabaseFactory dbFactory)
-        {
-            this.DatabaseFactory = dbFactory;
-            this.dbset = this.CustomerDb.Set<T>();
-        }
 
         /// <summary>
         /// Holds a reference to the DatabaseFactory class used to manage connections to the database.
         /// </summary>
-        protected IDomainXDatabaseFactory DatabaseFactory 
-        { 
-            get; 
-            private set; 
+        protected IDomainXDatabaseFactory DatabaseFactory
+        {
+            get;
+            private set;
         }
-
 
         /// <summary>
         /// Contains a reference to the <see cref="System.Data.Entity.DbContext"/> instance used by the repository.
         /// </summary>
         protected DomainXDBContext CustomerDb
-        { 
-            get 
-            { 
+        {
+            get
+            {
                 return this.db ?? (this.db = this.DatabaseFactory.GetDBContext());
             }
+        }
+
+        public DomainXRepositoryBase(IDomainXDatabaseFactory dbFactory)
+        {
+            this.DatabaseFactory = dbFactory;
+            this.dbset = this.CustomerDb.Set<T>();
         }
 
         /// <summary>
@@ -44,7 +44,6 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         public virtual void Add(T entity)
         {
             this.dbset.Add(entity);
-            this.db.Commit();
         }
 
         /// <summary>
@@ -53,7 +52,6 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         public virtual void Delete(T entity)
         {
             this.dbset.Remove(entity);
-            this.db.Commit();
         }
 
         /// <summary>
@@ -81,7 +79,12 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         {
             this.dbset.Attach(entity);
             this.db.Entry(entity).State = System.Data.EntityState.Modified;
-            this.db.Commit();
         }
+
+        public void SaveChanges()               
+        {
+            var NoOfObjectsSaved = this.db.SaveChanges();
+        }
+
     }
 }

@@ -4,6 +4,8 @@ namespace FixedTemplateRefactor.DomainX.FactoryInterfaces
 {
     public interface IAddressFactory
     {
-        Address getInstance(bool isValid);
+        // note maning conventions used here, param name should match target constructor
+        // (any order)
+        Address getInstance(bool isAddressValid);
     }
 }

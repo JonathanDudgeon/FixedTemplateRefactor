@@ -63,18 +63,25 @@ namespace FixedTemplateRefactor.App_Start
         private static void RegisterServices(IKernel kernel)
         { 
             // WIP, add in some examples of context binding
-            kernel.Bind<Customer>().To<Customer>();
             kernel.Bind<IDomainXDatabaseFactory>().To<DomainXDBContextFactory>();
             kernel.Bind<ICustomerFactory>().ToFactory();
 
             kernel.Bind<ICustomerRepository>().To<CustomerRepository>();
 
-            kernel.Bind(typeof(ISpecification<>)).To(typeof(PostCodeAreaSpecification));
-            kernel.Bind(typeof(ISpecification<>)).To(typeof(PostCodeFormatSpecification));
-            kernel.Bind<IAddressFactory>().ToFactory();
+            // we have 2 implementations of ispec injected into the same constructor so using 
+            // a bit of convention to resolve
+            //pCodeAreaSpec, ISpecification<string> pCodeFormatSpec
+            kernel.Bind(typeof(ISpecification<>)).To(
+                typeof(PostCodeAreaSpecification)).Named("PostCodeAreaSpecRequiredAttribute");
+            kernel.Bind(typeof(ISpecification<>)).To(
+                typeof(PostCodeFormatSpecification)).Named("PostCodeFormatSpecRequiredAttribute");
+
+            //.Bind(typeof(ISpecification<>)).To(
+             //   typeof(PostCodeAreaSpecification)).WhenInjectedExactlyInto<Customer>().Named("pCodeFormatSpec");
             
-
-
+            
+            kernel.Bind<IAddressFactory>().ToFactory();
         }        
     }
 }
+              
