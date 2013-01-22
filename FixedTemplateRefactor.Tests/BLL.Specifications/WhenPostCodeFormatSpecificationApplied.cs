@@ -20,7 +20,7 @@ namespace FixedTemplateRefactor.Tests.BLL.Specifications
              compositeAndSpec = spec1.And(spec2);
         }
 
-        public override void WhenThisHappens()
+        public override void AndThisHappens()
         {
             expectedResult = compositeAndSpec.IsSatisfiedBy(testSubject);
         }

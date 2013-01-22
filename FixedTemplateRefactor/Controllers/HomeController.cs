@@ -6,6 +6,7 @@ using System.Web;
 ﻿using FixedTemplateRefactor.DomainX.RepositoryInterfaces;
 using System.Web.Mvc;
 using FixedTemplateRefactor.DomainX.Entities;
+using log4net;
 
 namespace FixedTemplateRefactor.Controllers
 {
@@ -20,25 +21,11 @@ namespace FixedTemplateRefactor.Controllers
            
         public ActionResult Index()
         {
+
             ViewBag.Message = "Welcome to ASP.NET MVC!";
 
-            // lets play with repository
-            try
-            {
-                Customer cust = custRepository.CreateNew();
-
-                //Customer existingCust = custRepository.GetById(2);
-           
-               cust.AddAddressBy("aPostCode");
-           
-               custRepository.SaveChanges();
-      
-            }
-            catch (Exception ex)
-            {
-                
-            }
-           
+            // TODO pass in entities to view, hardcoded to seeded test data for the moment
+            var cust = this.custRepository.GetById(1);
             return this.View();
         }
 

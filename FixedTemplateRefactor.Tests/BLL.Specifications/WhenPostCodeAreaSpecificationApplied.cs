@@ -16,7 +16,7 @@ namespace FixedTemplateRefactor.Tests.BLL.Specifications
             spec1 = new PostCodeFormatSpecification();
         }
 
-        public override void WhenThisHappens()
+        public override void AndThisHappens()
         {
             expectedResult = spec1.IsSatisfiedBy(testSubject);
         }

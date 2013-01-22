@@ -1,17 +1,18 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FixedTemplateRefactor.Tests.BLL.Specifications
+namespace FixedTemplateRefactor.Tests
 {
     public abstract class SpecificationTestBase
     {
         [TestInitialize]
         public void Setup()
         {
+            //Arrange & Act, Assert is defined in the subclasses
             UnderTheseConditions();
-            WhenThisHappens();
+            AndThisHappens();
         }
 
         public abstract void UnderTheseConditions();
-        public abstract void WhenThisHappens();
+        public abstract void AndThisHappens();
     }
 }

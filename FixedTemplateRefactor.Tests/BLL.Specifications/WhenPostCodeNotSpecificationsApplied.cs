@@ -20,7 +20,7 @@ namespace FixedTemplateRefactor.Tests.BLL.Specifications
              formatedButNotInAreaSpec = spec2.And(spec1.Not());
         }
 
-        public override void WhenThisHappens()
+        public override void AndThisHappens()
         {
             expectedResult = formatedButNotInAreaSpec.IsSatisfiedBy(testSubject);
         }

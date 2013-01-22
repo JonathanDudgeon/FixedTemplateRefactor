@@ -15,7 +15,7 @@ namespace FixedTemplateRefactor.DomainX.DBContext
         /// A CustomerDBContext object (which inherits from DbContext).
         public DomainXDBContext GetDBContext()
         {
-            return this.db ?? (this.db = new DomainXDBContext(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString));
+            return this.db ?? (this.db = new DomainXDBContext(ConfigurationManager.ConnectionStrings["DomainX"].ConnectionString));
         }
 
         protected override void DisposeCore()

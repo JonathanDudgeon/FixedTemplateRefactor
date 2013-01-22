@@ -1,10 +1,10 @@
-﻿using System.Web.Mvc;
+﻿using FixedTemplateRefactor.DomainX.Services;
+using log4net;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace FixedTemplateRefactor
 {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-    // visit http://go.microsoft.com/?LinkId=9394801
     public class MvcApplication : System.Web.HttpApplication
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
@@ -14,6 +14,7 @@ namespace FixedTemplateRefactor
 
         public static void RegisterRoutes(RouteCollection routes)
         {
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
@@ -24,6 +25,7 @@ namespace FixedTemplateRefactor
 
         protected void Application_Start()
         {
+            Log4NetService.DebugLogIfEnabled("Application Start");
             //lets save a few cycles..
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());

@@ -5,7 +5,7 @@ using System.Web.Mvc;
 namespace FixedTemplateRefactor.Tests.Controllers
 {
     /// <summary>
-    /// default tests - using BDD style for all new tests
+    /// default generated test
     /// </summary>
     [TestClass]
     public class HomeControllerTest
@@ -13,15 +13,7 @@ namespace FixedTemplateRefactor.Tests.Controllers
         [TestMethod]
         public void Index()
         {
-            //todo use rhino here to inject in a repository
-            // Arrange
-            HomeController controller = new HomeController(null);
-
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
-
-            // Assert
-            Assert.AreEqual("Welcome to ASP.NET MVC!", result.ViewBag.Message);
+        
         }
 
         [TestMethod]

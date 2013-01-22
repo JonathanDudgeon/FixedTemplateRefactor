@@ -59,7 +59,8 @@
     <Compile Include="BLL.Specifications\WhenPostCodeAreaSpecificationApplied.cs" />
     <Compile Include="BLL.Specifications\WhenPostCodeNotSpecificationsApplied.cs" />
     <Compile Include="BLL.Specifications\WhenPostCodeOrSpecificationsApplied.cs" />
-    <Compile Include="BLL.Specifications\SpecificationTestBase.cs" />
+    <Compile Include="Controllers\WhenHomeControllerIndexRequested.cs" />
+    <Compile Include="SpecificationTestBase.cs" />
     <Compile Include="BLL.Specifications\WhenPostCodeAndSpecificationsApplied.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />

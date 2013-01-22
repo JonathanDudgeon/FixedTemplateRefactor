@@ -36,6 +36,9 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
@@ -73,6 +76,7 @@
     <Compile Include="Repositories\DomainXDBRepositoryBase.cs" />
     <Compile Include="RepositoryInterfaces\ICustomerRepository.cs" />
     <Compile Include="RepositoryInterfaces\IRepository.cs" />
+    <Compile Include="Services\Log4NetService.cs" />
     <Compile Include="Specifications\AndSpecification.cs" />
     <Compile Include="Specifications\ExtensionMethods.cs" />
     <Compile Include="Specifications\ISpecification.cs" />
