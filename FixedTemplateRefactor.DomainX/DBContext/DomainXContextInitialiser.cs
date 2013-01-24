@@ -11,14 +11,14 @@ namespace FixedTemplateRefactor.DomainX.DBContext
     {
         protected override void Seed(DomainXDBContext context)
         {
-            Customer customer = new Customer(null, null,null)
-            {
-               //TODO: WIP
-            };
+           // Customer customer = new Customer(null, null,null)
+           // {
+           //    //TODO: WIP
+           // };
 
-            context.Customers.Add(customer);
+            //context.Customers.Add(customer);
             
-            context.SaveChanges();
+            //context.SaveChanges();
         }
     }
 }

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Use factory where we cannot setup dependancies  on startup. Ninject factory extentions provide entity factory implementation">
+    <Position X="12.705" Y="3.254" Height="0.542" Width="3.256" />
+  </Comment>
+  <Comment CommentText="&lt;&lt;Aggregate root&gt;&gt;">
+    <Position X="9.274" Y="7.101" Height="0.291" Width="1.585" />
+  </Comment>
+  <Comment CommentText="OnModelCreating  calls Database.SetInitializer&lt;DomainXDBContext&gt;(new DomainXContextInitialiser());">
+    <Position X="0.5" Y="3.444" Height="1.278" Width="2.325" />
+  </Comment>
+  <Class Name="FixedTemplateRefactor.DomainX.DBContext.DomainXContextInitialiser" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBContext\DomainXContextInitialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.DBContext.DomainXDBContext">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAFAAEABAAAAAgAAAAAAAAAAEAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBContext\DomainXDBContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="customers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.DBContext.DomainXDBContextFactory" Collapsed="true">
+    <Position X="10" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>DBContext\DomainXDBContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Entities.Address" Collapsed="true">
+    <Position X="10" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAACAAAAAgAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Repositories.CustomerRepository">
+    <Position X="5.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\CustomerRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="custfactory" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Repositories.DomainXRepositoryBase&lt;T&gt;" Collapsed="true">
+    <Position X="5.75" Y="4" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAYAAAAAAAAQAgAAAAAAAAAAAAEAAEAACIAAAAAAAIA=</HashCode>
+      <FileName>Repositories\DomainXDBRepositoryBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+      <Property Name="DatabaseFactory" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Services.Log4NetService" Collapsed="true">
+    <Position X="15.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Services\Log4NetService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Specifications.PostCodeAreaSpecification" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\DomainSpecifications\PostCodeAreaSpecification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Specifications.PostCodeFormatSpecification" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\DomainSpecifications\PostCodeFormatSpecification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Specifications.ExtensionMethods" Collapsed="true">
+    <Position X="15.25" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\ExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Data.Entity.DropCreateDatabaseAlways&lt;TContext&gt;" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Entities.Customer">
+    <Position X="9" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAEAQAgAAAQBAEABAAAAAAAAA=</HashCode>
+      <FileName>Entities\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="postCodeAreaSpec" />
+      <Field Name="postCodeFormatSpec" />
+      <Field Name="entityFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Entities.Profile" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Entities\Profile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FixedTemplateRefactor.DomainX.DBContext.IDomainXDatabaseFactory" Collapsed="true">
+    <Position X="10" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>DBContext\IDomainXDBContextFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FixedTemplateRefactor.DomainX.FactoryInterfaces.ICustomerSupportFactory">
+    <Position X="10" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAA=</HashCode>
+      <FileName>Factoryinterfaces\ICustomerSupportFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FixedTemplateRefactor.DomainX.FactoryInterfaces.ICustomerFactory" Collapsed="true">
+    <Position X="9" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Factoryinterfaces\ICustomerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FixedTemplateRefactor.DomainX.RepositoryInterfaces.ICustomerRepository" Collapsed="true">
+    <Position X="3.25" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RepositoryInterfaces\ICustomerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FixedTemplateRefactor.DomainX.RepositoryInterfaces.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAIA=</HashCode>
+      <FileName>RepositoryInterfaces\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FixedTemplateRefactor.DomainX.Specifications.ISpecification&lt;TEntity&gt;" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\ISpecification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.Data.Entity.IDbSet&lt;TEntity&gt;" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

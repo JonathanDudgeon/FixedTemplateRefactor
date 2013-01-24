@@ -47,6 +47,7 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         }
 
         /// <summary>
+        /// 
         /// Deletes an existing instance of an entity from the database on behalf of the parent type.
         /// </summary>
         public virtual void Delete(T entity)

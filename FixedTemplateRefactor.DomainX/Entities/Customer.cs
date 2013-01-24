@@ -4,20 +4,27 @@ using FixedTemplateRefactor.DomainX.Specifications;
 
 using Ninject;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FixedTemplateRefactor.DomainX.Entities
 {
     /// <summary>
-    /// entity for demonstration purposes
-    /// </summary>C:\work\web\FixedTemplateRefactor\FixedTemplateRefactor.DomainX\Entities\Customer.cs
+    /// aggregate root entity 
+    /// </summary>
     public class Customer 
     {
+        [Key, ForeignKey("Profile")]
         public int CustomerId { get; set; }
         public string Name { get; set; }
         public List<Address> addresses { get; set; }
+
+        public Profile Profile { get; set; }
+
         private ISpecification<string> postCodeAreaSpec;
         private ISpecification<string> postCodeFormatSpec;
         private IAddressFactory addressFactory; 
+        
 
         public Customer()
         {

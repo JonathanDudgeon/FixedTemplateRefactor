@@ -66,6 +66,7 @@
     <Compile Include="DBContext\IDomainXDBContextFactory.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Exceptions\PostCodeInvalidException.cs" />
+    <Compile Include="Entities\Profile.cs" />
     <Compile Include="Factoryinterfaces\IAddressFactory.cs" />
     <Compile Include="Factoryinterfaces\ICustomerFactory.cs" />
     <Compile Include="Factoryinterfaces\IEntityFactory.cs" />
@@ -87,8 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Documentation\High Level Design Document.doc" />
+    <None Include="Documentation\HighLevelClass.cd" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

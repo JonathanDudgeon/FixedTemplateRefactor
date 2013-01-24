@@ -75,9 +75,6 @@ namespace FixedTemplateRefactor.App_Start
                 typeof(PostCodeAreaSpecification)).Named("PostCodeAreaSpecRequiredAttribute");
             kernel.Bind(typeof(ISpecification<>)).To(
                 typeof(PostCodeFormatSpecification)).Named("PostCodeFormatSpecRequiredAttribute");
-
-            //.Bind(typeof(ISpecification<>)).To(
-             //   typeof(PostCodeAreaSpecification)).WhenInjectedExactlyInto<Customer>().Named("pCodeFormatSpec");
             
             
             kernel.Bind<IAddressFactory>().ToFactory();

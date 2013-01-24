@@ -17,15 +17,19 @@ namespace FixedTemplateRefactor.Controllers
         public HomeController(ICustomerRepository custRepository)
         {
             this.custRepository = custRepository ;
+
         }
            
         public ActionResult Index()
         {
-
             ViewBag.Message = "Welcome to ASP.NET MVC!";
 
-            // TODO pass in entities to view, hardcoded to seeded test data for the moment
-            var cust = this.custRepository.GetById(1);
+            Customer cust = custRepository.CreateNew();
+            cust.AddAddressBy("APostCode");
+            cust.Profile = new Profile(Profile.SomeProfileIndicator.Balanced);
+            custRepository.Add(cust);
+            custRepository.SaveChanges();
+            var cust2 = this.custRepository.GetById(1);
             return this.View();
         }
 
