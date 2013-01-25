@@ -26,8 +26,8 @@ namespace FixedTemplateRefactor.Controllers
 
             Customer cust = custRepository.CreateNew();
             cust.AddAddressBy("APostCode");
-            cust.Profile = new Profile(Profile.SomeProfileIndicator.Balanced);
             custRepository.Add(cust);
+
             custRepository.SaveChanges();
             var cust2 = this.custRepository.GetById(1);
             return this.View();

@@ -63,7 +63,7 @@ namespace FixedTemplateRefactor.App_Start
         private static void RegisterServices(IKernel kernel)
         { 
             // WIP, add in some examples of context binding
-            kernel.Bind<IDomainXDatabaseFactory>().To<DomainXDBContextFactory>();
+            kernel.Bind<IDomainXDBContextFactory>().To<DomainXDBContextFactory>();
             kernel.Bind<ICustomerFactory>().ToFactory();
 
             kernel.Bind<ICustomerRepository>().To<CustomerRepository>();
@@ -75,9 +75,8 @@ namespace FixedTemplateRefactor.App_Start
                 typeof(PostCodeAreaSpecification)).Named("PostCodeAreaSpecRequiredAttribute");
             kernel.Bind(typeof(ISpecification<>)).To(
                 typeof(PostCodeFormatSpecification)).Named("PostCodeFormatSpecRequiredAttribute");
-            
-            
-            kernel.Bind<IAddressFactory>().ToFactory();
+
+            kernel.Bind<ICustomerChildEntityFactory>().ToFactory();
         }        
     }
 }

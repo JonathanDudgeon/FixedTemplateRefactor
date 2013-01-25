@@ -17,7 +17,7 @@ namespace FixedTemplateRefactor.DomainX.Repositories
     {
         private ICustomerFactory custfactory;
 
-        public CustomerRepository(IDomainXDatabaseFactory databaseFactory, ICustomerFactory customerFactory)
+        public CustomerRepository(IDomainXDBContextFactory databaseFactory, ICustomerFactory customerFactory)
             : base(databaseFactory)
         {
             this.custfactory = customerFactory;

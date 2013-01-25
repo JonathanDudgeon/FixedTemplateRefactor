@@ -1,7 +1,7 @@
 ﻿
 namespace FixedTemplateRefactor.DomainX.DBContext
 {
-    public interface IDomainXDatabaseFactory
+    public interface IDomainXDBContextFactory
     {
         DomainXDBContext GetDBContext();
     }

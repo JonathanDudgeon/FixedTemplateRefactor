@@ -7,7 +7,7 @@ namespace FixedTemplateRefactor.DomainX.DBContext
     /// This class is responsible for the actual connection to the database. It holds the reference to the actual 
     /// database connection string from Web.Config.
     /// 
-    public class DomainXDBContextFactory : Disposable, IDomainXDatabaseFactory
+    public class DomainXDBContextFactory : Disposable, IDomainXDBContextFactory
     {
         private DomainXDBContext db;
 

@@ -23,7 +23,7 @@ namespace FixedTemplateRefactor.DomainX.Entities
 
         private ISpecification<string> postCodeAreaSpec;
         private ISpecification<string> postCodeFormatSpec;
-        private IAddressFactory addressFactory; 
+        private ICustomerChildEntityFactory childEntityFactory; 
         
 
         public Customer()
@@ -34,11 +34,11 @@ namespace FixedTemplateRefactor.DomainX.Entities
         // could also have used named bindings
         //
         public Customer([Named("PostCodeAreaSpecRequiredAttribute")] ISpecification<string> pCodeAreaSpec, 
-                        [Named("PostCodeFormatSpecRequiredAttribute")] ISpecification<string> pCodeFormatSpec, IAddressFactory addressFactory)
+                        [Named("PostCodeFormatSpecRequiredAttribute")] ISpecification<string> pCodeFormatSpec, ICustomerChildEntityFactory customerSupportFactory)
         {
             this.postCodeAreaSpec = pCodeAreaSpec;
             this.postCodeFormatSpec = pCodeFormatSpec;
-            this.addressFactory = addressFactory;
+            this.childEntityFactory = customerSupportFactory;
             this.addresses = new List<Address>();
         }
       
@@ -51,7 +51,8 @@ namespace FixedTemplateRefactor.DomainX.Entities
         {
             if (this.postCodeAreaSpec.And(this.postCodeFormatSpec).IsSatisfiedBy(postCode))
             {
-                this.addresses.Add(addressFactory.getInstance(true));
+                this.addresses.Add(childEntityFactory.createAddressInstance(true));
+                this.Profile = childEntityFactory.createProfileInstance(Profile.SomeProfileIndicator.Balanced);
             }
             else
             {

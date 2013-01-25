@@ -25,7 +25,7 @@ namespace FixedTemplateRefactor.Tests.Controllers
         public override void UnderTheseConditions()
         {
             // Arrange
-            var databasefactory = MockRepository.GenerateMock<IDomainXDatabaseFactory>();
+            var databasefactory = MockRepository.GenerateMock<IDomainXDBContextFactory>();
             var custFactory = MockRepository.GenerateMock<ICustomerFactory>();
             custRepository = MockRepository.GenerateMock<ICustomerRepository>();
             controller = new HomeController(custRepository); 

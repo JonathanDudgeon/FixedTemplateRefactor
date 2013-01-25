@@ -15,7 +15,7 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         /// <summary>
         /// Holds a reference to the DatabaseFactory class used to manage connections to the database.
         /// </summary>
-        protected IDomainXDatabaseFactory DatabaseFactory
+        protected IDomainXDBContextFactory DatabaseFactory
         {
             get;
             private set;
@@ -32,7 +32,7 @@ namespace FixedTemplateRefactor.DomainX.Repositories
             }
         }
 
-        public DomainXRepositoryBase(IDomainXDatabaseFactory dbFactory)
+        public DomainXRepositoryBase(IDomainXDBContextFactory dbFactory)
         {
             this.DatabaseFactory = dbFactory;
             this.dbset = this.CustomerDb.Set<T>();
