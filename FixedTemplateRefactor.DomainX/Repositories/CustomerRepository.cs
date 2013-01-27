@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using log4net;
+using FixedTemplateRefactor.DomainX.Services;
 
 
 namespace FixedTemplateRefactor.DomainX.Repositories
@@ -15,6 +17,7 @@ namespace FixedTemplateRefactor.DomainX.Repositories
     /// </summary>
     public class CustomerRepository : DomainXRepositoryBase<Customer>, ICustomerRepository
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(CustomerRepository));
         private ICustomerFactory custfactory;
 
         public CustomerRepository(IDomainXDBContextFactory databaseFactory, ICustomerFactory customerFactory)
@@ -28,16 +31,10 @@ namespace FixedTemplateRefactor.DomainX.Repositories
         /// </summary>
         public Customer CreateNew()
         {
+            log.DebugLogIfEnabled("new Customer instance requested from repository");
             Customer newCust = this.custfactory.getInstance();
             this.Add(newCust);
             return newCust;
-        }
-
-        public IEnumerable<Customer> SearchAddress(string Description)
-        {
-            //TODO: HOOK UP QUERY
-           /// return this.CustomerDb.Customers.Where(t => t....);
-            return null;
         }
     }
 }

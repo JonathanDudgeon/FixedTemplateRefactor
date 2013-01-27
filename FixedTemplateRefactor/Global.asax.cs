@@ -2,11 +2,14 @@
 using log4net;
 using System.Web.Mvc;
 using System.Web.Routing;
+using FixedTemplateRefactor.DomainX.Services;
 
 namespace FixedTemplateRefactor
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(MvcApplication));
+
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
@@ -14,7 +17,7 @@ namespace FixedTemplateRefactor
 
         public static void RegisterRoutes(RouteCollection routes)
         {
-
+            log.DebugLogIfEnabled("registering routes..");
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
@@ -25,7 +28,8 @@ namespace FixedTemplateRefactor
 
         protected void Application_Start()
         {
-            Log4NetService.DebugLogIfEnabled("Application Start");
+            log.DebugLogIfEnabled("Application Starting..");
+
             //lets save a few cycles..
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());

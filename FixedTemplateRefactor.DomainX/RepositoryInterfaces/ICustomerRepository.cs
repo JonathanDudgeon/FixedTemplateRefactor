@@ -10,6 +10,6 @@ namespace FixedTemplateRefactor.DomainX.RepositoryInterfaces
         /// </summary>
         Customer CreateNew();
 
-        IEnumerable<Customer> SearchAddress(string Description);
+        //IEnumerable<Customer> SearchAddress(string Description);
     }
 }

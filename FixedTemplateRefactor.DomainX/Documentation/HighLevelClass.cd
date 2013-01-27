@@ -72,11 +72,11 @@
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="FixedTemplateRefactor.DomainX.Services.Log4NetService" Collapsed="true">
+  <Class Name="FixedTemplateRefactor.DomainX.Services.Log4NetExtentions" Collapsed="true">
     <Position X="15.5" Y="0.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>Services\Log4NetService.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Services\Log4NetExtentions.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FixedTemplateRefactor.DomainX.Specifications.PostCodeAreaSpecification" Collapsed="true" BaseTypeListCollapsed="true">
@@ -114,20 +114,28 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAAAEgQAAAAAQBAEABAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAABAEgQAAAAAQBAEAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Customer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="postCodeAreaSpec" />
       <Field Name="postCodeFormatSpec" />
       <Field Name="childEntityFactory" />
+      <Property Name="ActiveInstruction" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="FixedTemplateRefactor.DomainX.Entities.Profile" Collapsed="true">
+  <Class Name="FixedTemplateRefactor.DomainX.Entities.Advisor" Collapsed="true">
     <Position X="13" Y="9" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
-      <FileName>Entities\Profile.cs</FileName>
+      <HashCode>QAEAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Advisor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedTemplateRefactor.DomainX.Entities.AccountInstruction" Collapsed="true">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\AccountInstruction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="FixedTemplateRefactor.DomainX.DBContext.IDomainXDBContextFactory" Collapsed="true">

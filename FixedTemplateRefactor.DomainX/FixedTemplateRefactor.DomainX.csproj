@@ -65,8 +65,9 @@
     <Compile Include="DBContext\DomainXDBContextFactory.cs" />
     <Compile Include="DBContext\IDomainXDBContextFactory.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\AccountInstruction.cs" />
     <Compile Include="Exceptions\PostCodeInvalidException.cs" />
-    <Compile Include="Entities\Profile.cs" />
+    <Compile Include="Entities\Advisor.cs" />
     <Compile Include="Factoryinterfaces\ICustomerChildEntityFactory.cs" />
     <Compile Include="Factoryinterfaces\ICustomerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,7 +76,7 @@
     <Compile Include="Repositories\DomainXDBRepositoryBase.cs" />
     <Compile Include="RepositoryInterfaces\ICustomerRepository.cs" />
     <Compile Include="RepositoryInterfaces\IRepository.cs" />
-    <Compile Include="Services\Log4NetService.cs" />
+    <Compile Include="Services\Log4NetExtentions.cs" />
     <Compile Include="Specifications\AndSpecification.cs" />
     <Compile Include="Specifications\ExtensionMethods.cs" />
     <Compile Include="Specifications\ISpecification.cs" />

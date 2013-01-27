@@ -36,3 +36,35 @@ DEBUG2013-01-25 12:42:46 – Application Start
 DEBUG2013-01-25 12:45:04 – Application Start
 DEBUG2013-01-25 12:50:48 – Application Start
 DEBUG2013-01-25 12:55:15 – Application Start
+DEBUG2013-01-27 01:12:44 – Application Start
+DEBUG2013-01-27 01:34:58 – Application Start
+DEBUG2013-01-27 01:41:53 – Application Start
+DEBUG2013-01-27 01:45:12 – Application Start
+DEBUG2013-01-27 01:49:03 – Application Start
+DEBUG2013-01-27 02:10:15 – Application Start
+DEBUG2013-01-27 02:27:54 – Application Start
+DEBUG2013-01-27 02:39:43 – Application Start
+DEBUG2013-01-27 02:41:25 – Application Start
+DEBUG2013-01-27 06:27:54 – Application Start
+DEBUG2013-01-27 06:33:04 – Application Start
+DEBUG2013-01-27 06:34:41 – Application Start
+DEBUG2013-01-27 06:37:46 – Application Start
+DEBUG2013-01-27 06:40:53 – Application Start
+DEBUG2013-01-27 06:41:33 – Application Start
+DEBUG2013-01-27 06:42:44 – Application Start
+DEBUG2013-01-27 07:18:50 – Application BootStrapping IOC Container..
+DEBUG2013-01-27 08:47:41 – Application BootStrapping IOC ..
+DEBUG2013-01-27 08:47:42 – Setup IOC Container..
+DEBUG2013-01-27 08:47:45 – Application Starting..
+DEBUG2013-01-27 08:47:45 – registering routes..
+DEBUG2013-01-27 08:47:47 – Index Action..
+DEBUG2013-01-27 08:47:48 – new Customer instance requested from repository
+DEBUG2013-01-27 08:47:48 – Add To repository requested..
+DEBUG2013-01-27 08:47:52 – Add Request complete
+DEBUG2013-01-27 08:47:52 – Add Address requested using postcode APostCode
+DEBUG2013-01-27 08:47:52 – Address and Profile has been created
+DEBUG2013-01-27 08:47:52 – Add To repository requested..
+DEBUG2013-01-27 08:47:53 – Add Request complete
+DEBUG2013-01-27 08:47:53 – Save requested for repository..
+DEBUG2013-01-27 08:47:53 – Save changes requested completed
+DEBUG2013-01-27 08:47:53 – GetByID requested with ID 1

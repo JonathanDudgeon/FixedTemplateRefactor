@@ -13,15 +13,18 @@ using Ninject.Extensions.Factory;
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(FixedTemplateRefactor.App_Start.NinjectWebCommon), "Stop")]
 namespace FixedTemplateRefactor.App_Start
 {
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-    using Ninject;
-    using Ninject.Web.Common;
-    using System;
-    using System.Web;
+    using log4net;
+using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+using Ninject;
+using Ninject.Web.Common;
+using System;
+using System.Web;
+using FixedTemplateRefactor.DomainX.Services;
     
-
     public static class NinjectWebCommon 
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(NinjectWebCommon));
+
         private static readonly Bootstrapper Bootstrapper = new Bootstrapper();
 
         /// <summary>
@@ -29,6 +32,9 @@ namespace FixedTemplateRefactor.App_Start
         /// </summary>
         public static void Start() 
         {
+            log4net.Config.XmlConfigurator.Configure();
+            log.DebugLogIfEnabled("Application BootStrapping IOC ..");
+           
             DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
             DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
             Bootstrapper.Initialize(CreateKernel);
@@ -48,6 +54,7 @@ namespace FixedTemplateRefactor.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
+            log.DebugLogIfEnabled("Setup IOC Container..");
             var kernel = new StandardKernel();
             kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
             kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
@@ -68,9 +75,10 @@ namespace FixedTemplateRefactor.App_Start
 
             kernel.Bind<ICustomerRepository>().To<CustomerRepository>();
 
+            // -------------------------------------------------------------------------------
             // we have 2 implementations of ispec injected into the same constructor so using 
             // a bit of convention to resolve
-            //pCodeAreaSpec, ISpecification<string> pCodeFormatSpec
+            // -------------------------------------------------------------------------------
             kernel.Bind(typeof(ISpecification<>)).To(
                 typeof(PostCodeAreaSpecification)).Named("PostCodeAreaSpecRequiredAttribute");
             kernel.Bind(typeof(ISpecification<>)).To(

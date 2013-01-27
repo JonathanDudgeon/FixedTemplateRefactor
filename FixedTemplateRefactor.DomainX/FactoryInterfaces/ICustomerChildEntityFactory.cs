@@ -12,6 +12,6 @@ namespace FixedTemplateRefactor.DomainX.FactoryInterfaces
         // note maning conventions used here, param name should match target constructor
         // (any order)
         Address createAddressInstance(bool isAddressValid);
-        Profile createProfileInstance(Profile.SomeProfileIndicator indicator);
+        Advisor createProfileInstance(SomeProfileIndicator indicator);
     }
 }

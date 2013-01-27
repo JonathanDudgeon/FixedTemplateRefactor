@@ -12,20 +12,13 @@ namespace FixedTemplateRefactor.DomainX.Services
     ///  note only this service should be static.  All other services should be instanced 
     ///  and injected in as normal.
     /// </summary>
-    public static class Log4NetService
+    public static class Log4NetExtentions
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(Log4NetService));
-
-        static Log4NetService()
+        public static void DebugLogIfEnabled(this ILog logger, String message)
         {
-            log4net.Config.XmlConfigurator.Configure();
-        }
-
-        public static void DebugLogIfEnabled(String message)
-        {
-            if (log.IsDebugEnabled && !string.IsNullOrEmpty(message))
+            if (logger.IsDebugEnabled && !string.IsNullOrEmpty(message))
             {
-                log.Debug(message);
+                logger.Debug(message);
             }
         }
     }

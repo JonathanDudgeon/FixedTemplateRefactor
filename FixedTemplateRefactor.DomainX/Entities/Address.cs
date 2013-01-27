@@ -20,7 +20,9 @@ namespace FixedTemplateRefactor.DomainX.Entities
             }
         }
 
-        // Foreign key
+        /// <summary>
+        /// navigation property
+        /// </summary>
         public int CustomerId { get; set; }
          
         public virtual Customer Customer { get; set; }

@@ -8,16 +8,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FixedTemplateRefactor.DomainX.Entities
 {
-    public class Profile
+    public enum SomeProfileIndicator
     {
-        public enum SomeProfileIndicator
-        {
-            Risky,
-            Balanced,
-            LowRisk
-        }
+        Risky,
+        Balanced,
+        LowRisk
+    }
 
-        public int ProfileId { get; set; }
+    public class Advisor
+    {
+        public String Name { get; set; }
+        public int AdvisorId { get; set; }
         public SomeProfileIndicator ProfileIndicator { get; set; }
         
         /// <summary>
@@ -27,11 +28,11 @@ namespace FixedTemplateRefactor.DomainX.Entities
         [Required]
         public virtual Customer Customer { get; set; }
 
-        public Profile()
+        public Advisor()
         {
         }
 
-        public Profile(SomeProfileIndicator indicator)
+        public Advisor(SomeProfileIndicator indicator)
         {
             this.ProfileIndicator = indicator;
         }
