@@ -2,6 +2,7 @@
 
 namespace FixedTemplateRefactor.Tests
 {
+    [TestClass]
     public abstract class SpecificationTestBase
     {
         [TestInitialize]

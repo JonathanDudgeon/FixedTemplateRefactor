@@ -41,7 +41,10 @@ namespace FixedTemplateRefactor.DomainX.DBContext
         }
     
         // Composed types
-        public IDbSet<Address> Addresses { get; set; }
+        public virtual IDbSet<Address> Addresses { get; set; }
+
+        public DomainXDBContext()
+        {}
 
         public DomainXDBContext(string connectionString)
             : base(connectionString)

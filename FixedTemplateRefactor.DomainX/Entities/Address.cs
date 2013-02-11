@@ -21,10 +21,14 @@ namespace FixedTemplateRefactor.DomainX.Entities
         }
 
         /// <summary>
-        /// navigation property
+        ///  foreign key
         /// </summary>
         public int CustomerId { get; set; }
-         
+
+
+        /// <summary>
+        /// navigation property
+        /// </summary>
         public virtual Customer Customer { get; set; }
 
         public Address()

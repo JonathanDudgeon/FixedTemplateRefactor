@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using FixedTemplateRefactor.DomainX.Services;
 using log4net;
+using System;
 
 namespace FixedTemplateRefactor.DomainX.Entities
 {
@@ -19,7 +20,13 @@ namespace FixedTemplateRefactor.DomainX.Entities
         [Key, ForeignKey("Advisor")]
         public int CustomerId { get; set; }
         public string Name { get; set; }
-        public List<Address> addresses { get; set; }
+
+
+
+        /// <summary>
+        /// Addresses not used much in this domain so lets lazy load
+        /// </summary>
+        public virtual List<Address> addresses { get; set; }
 
         private static readonly ILog log = LogManager.GetLogger(typeof(Customer));
 
@@ -47,6 +54,8 @@ namespace FixedTemplateRefactor.DomainX.Entities
         /// <param name="pCodeAreaSpec"></param>
         /// <param name="pCodeFormatSpec"></param>
         /// <param name="customerSupportFactory"></param>
+        /// <Remarks>could use Lazy<> if any of these dependancies are expensive to load.</Remarks>
+        /// <remarks>note we are pretending pCodeAreaSpec is expensive to load up here</remarks>
         public Customer([Named("PostCodeAreaSpecRequiredAttribute")] ISpecification<string> pCodeAreaSpec, 
                         [Named("PostCodeFormatSpecRequiredAttribute")] ISpecification<string> pCodeFormatSpec, ICustomerChildEntityFactory customerSupportFactory)
         {

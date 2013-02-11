@@ -68,3 +68,234 @@ DEBUG2013-01-27 08:47:53 – Add Request complete
 DEBUG2013-01-27 08:47:53 – Save requested for repository..
 DEBUG2013-01-27 08:47:53 – Save changes requested completed
 DEBUG2013-01-27 08:47:53 – GetByID requested with ID 1
+DEBUG2013-01-28 11:41:19 – Application BootStrapping IOC ..
+DEBUG2013-01-28 11:41:19 – Setup IOC Container..
+DEBUG2013-01-28 11:42:24 – Application Starting..
+DEBUG2013-01-28 11:42:25 – registering routes..
+DEBUG2013-01-28 11:42:42 – Index Action..
+DEBUG2013-01-28 11:42:44 – new Customer instance requested from repository
+DEBUG2013-01-28 11:42:44 – Add To repository requested..
+DEBUG2013-01-28 11:42:55 – Add Request complete
+DEBUG2013-01-28 11:42:55 – Add Address requested using postcode APostCode
+DEBUG2013-01-28 11:42:55 – Address and Profile has been created
+DEBUG2013-01-28 11:42:56 – Add To repository requested..
+DEBUG2013-01-28 11:42:56 – Add Request complete
+DEBUG2013-01-28 11:42:56 – Save requested for repository..
+DEBUG2013-01-28 11:42:56 – Save changes requested completed
+DEBUG2013-01-28 11:42:56 – GetByID requested with ID 1
+DEBUG2013-01-28 11:58:29 – Application BootStrapping IOC ..
+DEBUG2013-01-28 11:58:31 – Setup IOC Container..
+DEBUG2013-01-28 11:58:38 – Application Starting..
+DEBUG2013-01-28 11:58:39 – registering routes..
+DEBUG2013-01-28 12:00:23 – Index Action..
+DEBUG2013-01-28 12:00:25 – new Customer instance requested from repository
+DEBUG2013-01-28 12:00:25 – Add To repository requested..
+DEBUG2013-01-28 12:00:25 – Add Request complete
+DEBUG2013-01-28 12:00:25 – Add Address requested using postcode APostCode
+DEBUG2013-01-28 12:00:25 – Address and Profile has been created
+DEBUG2013-01-28 12:00:28 – Add To repository requested..
+DEBUG2013-01-28 12:00:28 – Add Request complete
+DEBUG2013-01-28 12:00:28 – Save requested for repository..
+DEBUG2013-01-28 01:15:10 – Application BootStrapping IOC ..
+DEBUG2013-01-28 01:15:10 – Setup IOC Container..
+DEBUG2013-01-28 01:15:33 – Application BootStrapping IOC ..
+DEBUG2013-01-28 01:15:33 – Setup IOC Container..
+DEBUG2013-01-28 01:15:49 – Application Starting..
+DEBUG2013-01-28 01:15:50 – registering routes..
+DEBUG2013-01-28 01:16:05 – Index Action..
+DEBUG2013-01-28 01:16:06 – new Customer instance requested from repository
+DEBUG2013-01-28 01:16:06 – Add To repository requested..
+DEBUG2013-01-28 01:16:15 – Add Request complete
+DEBUG2013-01-28 01:16:19 – Add Address requested using postcode APostCode
+DEBUG2013-01-28 01:16:19 – Address and Profile has been created
+DEBUG2013-01-28 01:16:20 – Add To repository requested..
+DEBUG2013-01-28 01:16:20 – Add Request complete
+DEBUG2013-01-28 01:16:21 – Save requested for repository..
+DEBUG2013-01-28 01:16:21 – Save changes requested completed
+DEBUG2013-01-28 01:16:22 – GetByID requested with ID 1
+DEBUG2013-01-28 01:20:02 – Application BootStrapping IOC ..
+DEBUG2013-01-28 01:20:39 – Setup IOC Container..
+DEBUG2013-01-28 01:20:44 – Application Starting..
+DEBUG2013-01-28 01:20:44 – registering routes..
+DEBUG2013-01-28 01:20:49 – Index Action..
+DEBUG2013-01-28 01:20:50 – new Customer instance requested from repository
+DEBUG2013-01-28 01:20:50 – Add To repository requested..
+DEBUG2013-01-28 01:20:59 – Add Request complete
+DEBUG2013-01-28 01:20:59 – Add Address requested using postcode APostCode
+DEBUG2013-01-28 01:20:59 – Address and Profile has been created
+DEBUG2013-01-28 01:21:00 – Add To repository requested..
+DEBUG2013-01-28 01:21:00 – Add Request complete
+DEBUG2013-01-28 01:21:00 – Save requested for repository..
+DEBUG2013-01-28 01:21:13 – Save changes requested completed
+DEBUG2013-01-28 01:21:15 – GetByID requested with ID 1
+DEBUG2013-01-28 04:47:40 – Application BootStrapping IOC ..
+DEBUG2013-01-28 04:47:40 – Setup IOC Container..
+DEBUG2013-01-28 04:49:36 – Application BootStrapping IOC ..
+DEBUG2013-01-28 04:49:36 – Setup IOC Container..
+DEBUG2013-01-28 04:50:28 – Application BootStrapping IOC ..
+DEBUG2013-01-28 04:50:28 – Setup IOC Container..
+DEBUG2013-01-28 08:51:51 – Application BootStrapping IOC ..
+DEBUG2013-01-28 08:51:51 – Setup IOC Container..
+DEBUG2013-01-28 09:01:07 – Application BootStrapping IOC ..
+DEBUG2013-01-28 09:01:07 – Setup IOC Container..
+DEBUG2013-01-28 09:09:01 – Application BootStrapping IOC ..
+DEBUG2013-01-28 09:09:01 – Setup IOC Container..
+DEBUG2013-01-29 12:59:51 – Application BootStrapping IOC ..
+DEBUG2013-01-29 12:59:51 – Setup IOC Container..
+DEBUG2013-01-29 01:00:03 – Application BootStrapping IOC ..
+DEBUG2013-01-29 01:00:03 – Setup IOC Container..
+DEBUG2013-01-29 01:10:10 – Application BootStrapping IOC ..
+DEBUG2013-01-29 01:10:10 – Setup IOC Container..
+DEBUG2013-01-29 01:11:19 – Application BootStrapping IOC ..
+DEBUG2013-01-29 01:11:19 – Setup IOC Container..
+DEBUG2013-01-30 08:57:11 – Application BootStrapping IOC ..
+DEBUG2013-01-30 08:57:11 – Setup IOC Container..
+DEBUG2013-01-30 11:12:20 – Application BootStrapping IOC ..
+DEBUG2013-01-30 11:12:20 – Setup IOC Container..
+DEBUG2013-01-31 12:50:37 – Application BootStrapping IOC ..
+DEBUG2013-01-31 12:50:37 – Setup IOC Container..
+DEBUG2013-01-31 12:54:01 – Application BootStrapping IOC ..
+DEBUG2013-01-31 12:54:01 – Setup IOC Container..
+DEBUG2013-01-31 01:06:07 – Application BootStrapping IOC ..
+DEBUG2013-01-31 01:06:07 – Setup IOC Container..
+DEBUG2013-01-31 01:08:43 – Application BootStrapping IOC ..
+DEBUG2013-01-31 01:08:43 – Setup IOC Container..
+DEBUG2013-02-04 05:50:57 – Application BootStrapping IOC ..
+DEBUG2013-02-04 05:50:57 – Setup IOC Container..
+DEBUG2013-02-04 08:26:13 – Application BootStrapping IOC ..
+DEBUG2013-02-04 08:26:13 – Setup IOC Container..
+DEBUG2013-02-05 05:24:14 – Application BootStrapping IOC ..
+DEBUG2013-02-05 05:24:14 – Setup IOC Container..
+DEBUG2013-02-06 12:39:39 – Application BootStrapping IOC ..
+DEBUG2013-02-06 12:39:40 – Setup IOC Container..
+DEBUG2013-02-06 12:39:54 – Application Starting..
+DEBUG2013-02-06 12:39:55 – registering routes..
+DEBUG2013-02-06 12:40:22 – Index Action..
+DEBUG2013-02-06 12:40:37 – new Customer instance requested from repository
+DEBUG2013-02-06 12:40:37 – Add To repository requested..
+DEBUG2013-02-06 12:40:53 – Add Request complete
+DEBUG2013-02-06 12:40:53 – Add Address requested using postcode APostCode
+DEBUG2013-02-06 12:40:53 – Address and Profile has been created
+DEBUG2013-02-06 12:40:55 – Add To repository requested..
+DEBUG2013-02-06 12:40:55 – Add Request complete
+DEBUG2013-02-06 12:40:55 – Save requested for repository..
+DEBUG2013-02-06 12:40:58 – Save changes requested completed
+DEBUG2013-02-06 12:40:58 – GetByID requested with ID 1
+DEBUG2013-02-06 12:43:37 – Application BootStrapping IOC ..
+DEBUG2013-02-06 12:43:37 – Setup IOC Container..
+DEBUG2013-02-06 12:47:53 – Application BootStrapping IOC ..
+DEBUG2013-02-06 12:47:55 – Setup IOC Container..
+DEBUG2013-02-06 12:48:07 – Application Starting..
+DEBUG2013-02-06 12:48:08 – registering routes..
+DEBUG2013-02-06 12:48:13 – Index Action..
+DEBUG2013-02-06 12:48:56 – Index Action..
+DEBUG2013-02-08 01:05:06 – Application BootStrapping IOC ..
+DEBUG2013-02-08 01:05:06 – Setup IOC Container..
+DEBUG2013-02-11 11:10:56 – Application BootStrapping IOC ..
+DEBUG2013-02-11 11:10:57 – Setup IOC Container..
+DEBUG2013-02-11 11:11:09 – Application Starting..
+DEBUG2013-02-11 11:11:11 – registering routes..
+DEBUG2013-02-11 11:11:23 – Index Action..
+DEBUG2013-02-11 11:11:25 – new Customer instance requested from repository
+DEBUG2013-02-11 11:11:25 – Add To repository requested..
+DEBUG2013-02-11 11:11:41 – Add Request complete
+DEBUG2013-02-11 11:11:41 – Add Address requested using postcode APostCode
+DEBUG2013-02-11 11:11:41 – Address and Profile has been created
+DEBUG2013-02-11 11:12:04 – Add To repository requested..
+DEBUG2013-02-11 11:12:04 – Add Request complete
+DEBUG2013-02-11 11:12:04 – Save requested for repository..
+DEBUG2013-02-11 11:12:06 – Save changes requested completed
+DEBUG2013-02-11 11:12:06 – GetByID requested with ID 1
+DEBUG2013-02-11 12:02:44 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:02:44 – Setup IOC Container..
+DEBUG2013-02-11 12:05:58 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:05:58 – Setup IOC Container..
+DEBUG2013-02-11 12:06:23 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:06:23 – Setup IOC Container..
+DEBUG2013-02-11 12:08:02 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:08:02 – Setup IOC Container..
+DEBUG2013-02-11 12:08:32 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:08:32 – Setup IOC Container..
+DEBUG2013-02-11 12:08:34 – Application Starting..
+DEBUG2013-02-11 12:08:35 – registering routes..
+DEBUG2013-02-11 12:08:35 – Index Action..
+DEBUG2013-02-11 12:11:20 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:11:20 – Setup IOC Container..
+DEBUG2013-02-11 12:11:29 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:11:30 – Setup IOC Container..
+DEBUG2013-02-11 12:11:31 – Application Starting..
+DEBUG2013-02-11 12:11:31 – registering routes..
+DEBUG2013-02-11 12:11:32 – Index Action..
+DEBUG2013-02-11 12:11:53 – Index Action..
+DEBUG2013-02-11 12:13:51 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:13:51 – Setup IOC Container..
+DEBUG2013-02-11 12:14:23 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:14:23 – Setup IOC Container..
+DEBUG2013-02-11 12:18:36 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:18:36 – Setup IOC Container..
+DEBUG2013-02-11 12:20:43 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:20:43 – Setup IOC Container..
+DEBUG2013-02-11 12:21:25 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:21:25 – Setup IOC Container..
+DEBUG2013-02-11 12:22:36 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:22:36 – Setup IOC Container..
+DEBUG2013-02-11 12:26:05 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:26:05 – Setup IOC Container..
+DEBUG2013-02-11 12:27:09 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:27:09 – Setup IOC Container..
+DEBUG2013-02-11 12:27:10 – Application Starting..
+DEBUG2013-02-11 12:27:10 – registering routes..
+DEBUG2013-02-11 12:27:11 – Index Action..
+DEBUG2013-02-11 12:27:43 – Index Action..
+DEBUG2013-02-11 12:29:28 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:29:28 – Setup IOC Container..
+DEBUG2013-02-11 12:30:17 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:30:17 – Setup IOC Container..
+DEBUG2013-02-11 12:31:30 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:31:30 – Setup IOC Container..
+DEBUG2013-02-11 12:31:37 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:31:37 – Setup IOC Container..
+DEBUG2013-02-11 12:31:41 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:31:41 – Setup IOC Container..
+DEBUG2013-02-11 12:31:43 – Application Starting..
+DEBUG2013-02-11 12:31:43 – registering routes..
+DEBUG2013-02-11 12:32:56 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:32:56 – Setup IOC Container..
+DEBUG2013-02-11 12:33:15 – Application Starting..
+DEBUG2013-02-11 12:33:15 – registering routes..
+DEBUG2013-02-11 12:33:59 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:33:59 – Setup IOC Container..
+DEBUG2013-02-11 12:34:19 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:34:19 – Setup IOC Container..
+DEBUG2013-02-11 12:34:36 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:34:36 – Setup IOC Container..
+DEBUG2013-02-11 12:34:45 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:34:45 – Setup IOC Container..
+DEBUG2013-02-11 12:34:46 – Application Starting..
+DEBUG2013-02-11 12:34:46 – registering routes..
+DEBUG2013-02-11 12:34:47 – Index Action..
+DEBUG2013-02-11 12:34:47 – GetByID requested with ID 1
+DEBUG2013-02-11 12:35:27 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:35:27 – Setup IOC Container..
+DEBUG2013-02-11 12:36:13 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:36:13 – Setup IOC Container..
+DEBUG2013-02-11 12:36:14 – Application Starting..
+DEBUG2013-02-11 12:36:14 – registering routes..
+DEBUG2013-02-11 12:36:15 – Index Action..
+DEBUG2013-02-11 12:36:40 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:36:40 – Setup IOC Container..
+DEBUG2013-02-11 12:36:57 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:36:57 – Setup IOC Container..
+DEBUG2013-02-11 12:36:58 – Application Starting..
+DEBUG2013-02-11 12:36:59 – registering routes..
+DEBUG2013-02-11 12:36:59 – Index Action..
+DEBUG2013-02-11 12:37:55 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:37:55 – Setup IOC Container..
+DEBUG2013-02-11 12:38:15 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:38:15 – Setup IOC Container..
+DEBUG2013-02-11 12:38:24 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:38:24 – Setup IOC Container..
+DEBUG2013-02-11 12:38:27 – Application BootStrapping IOC ..
+DEBUG2013-02-11 12:38:27 – Setup IOC Container..
+DEBUG2013-02-11 12:38:29 – Application Starting..
+DEBUG2013-02-11 12:38:29 – registering routes..

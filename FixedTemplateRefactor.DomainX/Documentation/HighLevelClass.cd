@@ -47,7 +47,7 @@
   <Class Name="FixedTemplateRefactor.DomainX.Repositories.CustomerRepository">
     <Position X="5.75" Y="6.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAACgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Repositories\CustomerRepository.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -63,7 +63,7 @@
       <Compartment Name="Properties" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>gAYAAAAAAAAQAgAAAAAAAAAAAAEAAEAACIAAAAAAAIA=</HashCode>
+      <HashCode>gAYAAAAAAAAQAgAAAAAACAAAAAEAAEAACIAAAAAAAIA=</HashCode>
       <FileName>Repositories\DomainXDBRepositoryBase.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -114,11 +114,10 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAABAEgQAAAAAQBAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAABAGgQAAAAAQBAEAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Customer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="postCodeAreaSpec" />
       <Field Name="postCodeFormatSpec" />
       <Field Name="childEntityFactory" />
       <Property Name="ActiveInstruction" />
@@ -132,7 +131,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FixedTemplateRefactor.DomainX.Entities.AccountInstruction" Collapsed="true">
-    <Position X="12.25" Y="6" Width="1.5" />
+    <Position X="12.25" Y="6" Width="2.75" />
     <TypeIdentifier>
       <HashCode>CAQAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\AccountInstruction.cs</FileName>
@@ -155,7 +154,7 @@
   <Interface Name="FixedTemplateRefactor.DomainX.RepositoryInterfaces.ICustomerRepository" Collapsed="true">
     <Position X="3.25" Y="6.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>RepositoryInterfaces\ICustomerRepository.cs</FileName>
     </TypeIdentifier>
   </Interface>

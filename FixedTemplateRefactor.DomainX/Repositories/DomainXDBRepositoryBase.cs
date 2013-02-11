@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using log4net;
 using FixedTemplateRefactor.DomainX.Services;
+using System.Threading.Tasks;
 
 namespace FixedTemplateRefactor.DomainX.Repositories
 {
@@ -42,14 +43,13 @@ namespace FixedTemplateRefactor.DomainX.Repositories
 
         /// <summary>
         /// Adds a new entity instance to the database on behalf of the parent type.
-        /// </summary>
+        /// </summary>                                  
         public virtual void Add(T entity)
         {
-            if (entity == null)
+            if (entity == null) 
             {
                 log.Error("Add to customer Repository requested with a null arguement");
                 throw new System.ArgumentNullException();
-
             }
 
             log.DebugLogIfEnabled("Add To repository requested..");
