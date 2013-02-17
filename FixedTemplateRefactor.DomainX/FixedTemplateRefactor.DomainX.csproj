@@ -50,6 +50,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +61,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBase\Activity.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ActivityType.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GetPersonSummary2_Result.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\GetPersonSummary_Result.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HealthTracker.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HealthTracker.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HealthTracker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\HealthTracker.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HealthTracker.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Hydration.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Meal.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\MealType.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Person.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\PersonSummaryView.cs">
+      <DependentUpon>HealthTracker.tt</DependentUpon>
+    </Compile>
     <Compile Include="DBContext\Disposable.cs" />
     <Compile Include="DBContext\DomainXContextInitialiser.cs" />
     <Compile Include="DBContext\DomainXDBContext.cs" />
@@ -87,10 +131,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="DataBase\HealthTracker.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HealthTracker.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataBase\HealthTracker.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HealthTracker.edmx</DependentUpon>
+      <LastGenOutput>HealthTracker.Context.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\HealthTracker.edmx.diagram">
+      <DependentUpon>HealthTracker.edmx</DependentUpon>
+    </None>
+    <None Include="DataBase\HealthTracker.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HealthTracker.edmx</DependentUpon>
+      <LastGenOutput>HealthTracker.cs</LastGenOutput>
+    </None>
     <None Include="Documentation\High Level Design Document.doc" />
     <None Include="Documentation\HighLevelClass.cd" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\HealthTracker_Database_Scripts\HealthTracker_Add_Optional_Credentials.sql" />
+    <Content Include="DataBase\HealthTracker_Database_Scripts\HealthTracker_Create_All_Objects.sql" />
+    <Content Include="DataBase\HealthTracker_Database_Scripts\HealthTracker_Sample_Data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
